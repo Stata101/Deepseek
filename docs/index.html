@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>index</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="index_files/libs/clipboard/clipboard.min.js"></script>
+<script src="index_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="index_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="index_files/libs/quarto-html/popper.min.js"></script>
+<script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="index_files/libs/quarto-html/anchor.min.js"></script>
+<link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="index_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="index_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="index_files/libs/bootstrap/bootstrap-bb462d781dde1847d9e3ccf7736099dd.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="fullcontent quarto-light">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+
+
+
+<section id="deepseek总结论文" class="level1">
+<h1>Deepseek总结论文</h1>
+<hr>
+<p>来源：数量经济学微信公众号（计量经济学服务中心）</p>
+<section id="计量经济网" class="level2">
+<h2 class="anchored" data-anchor-id="计量经济网">🎓 计量经济网</h2>
+<ul>
+<li>10年间，计量经济网依托于微信公众平台等累积了计量经济学及Eviews、Stata、SPSS、Matlab、Geoda、Python、ArcGIS、R等相关方法及软件操作的优质资源，旨在为大家分享经管人文社科等领域的相关知识，希望能帮助读者更好的学习计量。</li>
+<li>📚 <a href="https://www.aistata.cn">计量经济网主页</a> — 计量学术科研服务平台</li>
+<li>🔧 <a href="https://www.aistata.cn/AITools/">AI 工具导航</a> — AI 工具集合，助你效率翻倍</li>
+<li>📈 <a href="https://www.aistata.cn/AITools/">高级计量及Stata应用课程</a> — 2017-2026年，10年Stata经典课程</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="双重差分法下固定效应估计量的负权重问题新的机制与解决方案" class="level1">
+<h1>1、双重差分法下固定效应估计量的负权重问题——新的机制与解决方案</h1>
+<p><img src="https://metrics101.oss-cn-chengdu.aliyuncs.com/fig-metrics/202503031025421.png" class="img-fluid"></p>
+<p><img src="https://metrics101.oss-cn-chengdu.aliyuncs.com/fig-metrics/202503031025333.png" class="img-fluid"></p>
+<pre><code>双重差分法下固定效应估计量...问题——新的机制与解决方案_张征宇
+期刊名称：《数量经济技术经济研究》
+文章标题：双重差分法下固定效应估计量的负权重问题——新的机制与解决方案
+作者：张征宇，吴路遥
+发表时间：2025-02-27
+
+摘要：
+
+本文探讨了在多时点双重差分（DID）模型中使用固定效应（FE）估计政策效应时出现的负权重问题。研究发现，FE估计量可能包含负权重，这会严重干扰政策评估的经济学解释。文章提出了一个新的机制，即在DID模型中引入时变协变量也可能导致负权重问题，即使在单时点DID或两期情形中也是如此。本文还量化了由于FE估计中自动分配的权重所导致的偏误，并提出了一种新的异质性稳健DID估计量，证明了其不存在负权重问题，并推导了相应的大样本性质用于统计检验。以低碳城市试点对碳排放的影响为例，本文方法的实用性得到了说明。
+双重差分法下固定效应估计量的负权重问题——新的机制与解决方案
+2025.02.27
+
+在双重差分法下，固定效应估计量的负权重问题产生的理论机制主要有两个：一是政策多时点发生，导致不同时点的“处理组”与“控制组”不断变化，从而产生不合格的对照组；二是在模型中引入时变协变量，这同样可能导致负权重问题，即使在单时点双重差分或两期情形中，这一问题仍然存在。这些负权重会扰乱固定效应估计量的经济学解释，即使个体层面的处理效应为正，由于部分权重为负，最终得到的固定效应估计量可能为负，从而产生误导性结论。
+
+本文的理论贡献主要体现在三个方面：首先，本文建立了一个适用于国内研究者进行政策评价的分解定理，并以此重点讨论采用固定效应估计政策平均效应时带来的负权重问题及其根源，揭示了“引入协变量”会导致固定效应估计量的负权重问题，这是一个新的发现。其次，本文量化了固定效应估计量中的负权重问题以及由于权重函数设置不同所产生的偏误，提供了帮助研究者理解固定效应估计量与平均处理效应估计量之间偏差的量化检验方法。最后，本文基于部分线性模型提出了一种新的异质性稳健双重差分估计量，并证明了其不存在负权重问题，推导了相应的大样本性质用于统计检验，为实证研究提供了一种新的稳健估计工具。
+
+研究设计：本文采用双重差分法（DID）评估政策效应，通过比较处理组和控制组在政策实施前后的变化差异来识别因果效应。在多时点DID模型中，使用固定效应（FE）模型估计政策效应，发现FE估计量可能包含负权重，导致经济学解释混乱。为此，本文建立了一个分解定理，揭示了引入时变协变量导致的负权重问题，并提出了异质性稳健DID估计量（PLM估计量），以克服FE估计量中的偏误，并证明了其不存在负权重问题，适用于单时点和多时点DID模型。
+
+核心发现是，在多时点双重差分模型中使用固定效应估计政策效应时，即使在单时点或两期情形下，引入协变量也可能导致估计量中出现负权重问题，这会严重扰乱固定效应估计量的经济学解释，使得即使个体层面的处理效应为正，最终得到的估计量也可能为负，从而产生误导性结论。
+
+《双重差分法下固定效应估计量的负权重问题——新的机制与解决方案》由张征宇和吴路遥发表于2025年2月27日的《数量经济技术经济研究》。文章探讨多时点双重差分模型中用固定效应估计政策效应时的负权重问题，发现其会干扰政策评估的经济学解释。理论机制包括政策多时点发生致对照组不合格和引入时变协变量（单时点或两期情形下也会）。理论贡献有三：建立分解定理探讨负权重问题根源，量化负权重问题及权重函数设置偏误，提出新的异质性稳健双重差分估计量并证明无负权重且推导大样本性质。研究采用双重差分法评估政策效应，发现固定效应估计量可能含负权重后提出分解定理揭示协变量导致的负权重问题并提出PLM估计量克服偏误。核心发现为多时点双重差分模型中使用固定效应估计政策效应时引入协变量可能导致负权重，扰乱经济学解释产生误导结论。
+
+</code></pre>
+</section>
+<section id="计量经济学中的因果推断过去现在与未来" class="level1">
+<h1>2、计量经济学中的因果推断：过去、现在与未来</h1>
+<p><img src="https://metrics101.oss-cn-chengdu.aliyuncs.com/fig-metrics/202503031018562.png" class="img-fluid"></p>
+<p><img src="https://metrics101.oss-cn-chengdu.aliyuncs.com/fig-metrics/202503031018651.png" class="img-fluid"></p>
+<pre><code>期刊名称：中山大学学报（社会科学版）
+
+文章标题：计量经济学中的因果推断：过去、现在与未来
+
+作者：陈强
+
+发表时间：2025年第1期
+
+
+摘要：本文系统回顾了计量经济学中因果推断的历史发展和主要方法，包括随机实验、自然实验、断点回归、匹配估计、双稳健估计、工具变量法、双重差分法、合成控制法、回归控制法和分位数控制法等。文章强调了因果推断方法的历史起源，以助于理解其精神实质，并更新了至2024年的最新研究进展。文章还对因果推断的未来发展方向进行了展望，特别是在机器学习在因果推断中的应用前景。
+
+计量经济学中的因果推断：过去、现在与未来
+
+2025
+
+研究设计：本研究采用双重差分法（DID），通过比较处理组和控制组在政策实施前后的变化差异，来估计政策效应。具体而言，我们将选取政策实施前后的面板数据，构建包含时间和处理组虚拟变量的回归模型，以控制不随时间变化的个体异质性和共同趋势。通过这种方法，我们可以识别出政策变化带来的因果效应，同时通过事件研究法和安慰剂检验来验证平行趋势假设的合理性。
+
+核心发现是：计量经济学中的因果推断方法经历了从可信度革命以来的快速发展，形成了包括随机实验、自然实验、断点回归、匹配估计、双稳健估计、工具变量法、双重差分法、合成控制法、回归控制法和分位数控制法等在内的一系列主流方法，这些方法的发展不仅推动了实证研究的可信度提升，也为未来的因果推断研究指明了发展方向。
+
+《计量经济学中的因果推断：过去、现在与未来》由陈强撰写发表于2025年第1期的《中山大学学报（社会科学版）》。摘要指出系统回顾了计量经济学因果推断的发展及主要方法，涵盖多种方法并强调其历史起源以助理解实质，还更新至2024年的进展并展望机器学习应用前景。研究采用双重差分法（DID），选取政策前后的面板数据构建回归模型控制个体异质性和共同趋势，用事件研究法和安慰剂检验验证平行趋势假设合理性以估计政策效应。核心发现为计量经济学因果推断自可信度革命后快速发展形成众多主流方法，这些方法推动实证研究可信度提升并指明未来发展方向。
+</code></pre>
+</section>
+<section id="双重差分法原理及其最新发展一个不完全综述" class="level1">
+<h1>3、双重差分法原理及其最新发展：一个不完全综述</h1>
+<p><img src="https://metrics101.oss-cn-chengdu.aliyuncs.com/fig-metrics/202503031019684.png" class="img-fluid"></p>
+<p><img src="https://metrics101.oss-cn-chengdu.aliyuncs.com/fig-metrics/202503031019491.png" class="img-fluid"></p>
+<pre><code>文章标题：双重差分法原理及其最新发展：一个不完全综述
+作者：赵西亮
+发表时间：2024年1月11日
+
+摘要：
+双重差分法（DID）是应用微观经济学研究中广泛使用的一种研究设计和识别策略，其核心在于平行趋势假设。本文首先定义了因果识别，并区分了因果推断与统计推断。接着，基于最新文献，总结了DID的基本识别条件、协变量引入方式和估计方法。特别地，在多期交错政策中，当存在异质性时，传统的双向固定效应估计量和事件研究法估计量可能存在偏差。文章详细归纳了异质性情况下的最新估计量，并探讨了平行趋势检验的问题、解决办法和敏感性分析。最后，通过案例展示了如何利用最新工具估计政策效应并评估结果的稳健性。本文为经济学实证研究者提供了必要的参考，有助于理解和应用DID方法。
+
+双重差分法原理及其最新发展：一个不完全综述
+
+2024.1.11
+
+
+
+研究设计：本研究采用双重差分法（DID），通过比较政策实施前后的变化以及干预组与控制组之间的差异来识别政策效应。具体而言，在确保平行趋势假设成立的基础上，利用政策实施作为外生变量，构建模型来估计干预组平均因果效应（ATT）。通过引入时间固定效应和个体固定效应控制不随时间变化的未观测因素，同时引入协变量以增强模型的控制力和准确性。在多期数据的情况下，进一步探讨政策的动态效应，并采用事件研究法进行平行趋势的检验。
+
+核心发现：双重差分法的最新文献表明，在多期交错政策情境下，传统的双向固定效应模型和事件研究法估计量可能存在偏差，特别是当个体效应存在时间异质性时。因此，需要采用新的估计方法，如Callaway &amp; Sant’Anna (2021)的非参数估计量和Wooldridge (2021)的回归估计量，以获得更为准确的因果效应估计。同时，平行趋势假设的检验存在统计功效低等问题，建议使用Roth (2022)的功效分析方法和Rambachan &amp; Roth (2022)的敏感性分析方法来评估估计结果的稳健性。
+
+《双重差分法原理及其最新发展：一个不完全综述》由赵西亮发表于2024年1月11日的《经济研究》。摘要指出双重差分法（DID）在应用微观经济学研究中广泛应用且核心为平行趋势假设，文章先定义因果识别等，基于最新文献总结DID基本识别条件等。研究设计采用DID，在平行趋势假设成立基础上，用政策实施作外生变量构建模型估计干预组平均因果效应，通过多种方式增强模型控制力与准确性，多期数据时探讨政策动态效应并进行平行趋势检验。核心发现是多期交错政策下传统估计量可能有偏差（个体效应存在时间异质性时），需采用新估计方法，平行趋势假设检验存在问题，要用特定方法评估估计结果稳健性，本文为经济学实证研究者理解和应用DID方法提供参考。
+</code></pre>
+</section>
+<section id="因果中介分析的理论进展及其应用" class="level1">
+<h1>4、因果中介分析的理论进展及其应用</h1>
+<p><img src="https://metrics101.oss-cn-chengdu.aliyuncs.com/fig-metrics/202503031032209.png" class="img-fluid"></p>
+<p><img src="https://metrics101.oss-cn-chengdu.aliyuncs.com/fig-metrics/202503031020798.png" class="img-fluid"></p>
+<pre><code>因果中介效应
+
+期刊名称：《数量经济技术经济研究》
+
+文章标题：因果中介分析的理论进展及其应用
+
+作者：赵西亮
+
+发表时间：2025年第2期
+
+
+摘要：本文介绍了因果中介分析方法的理论进展及其在经济学研究中的应用。文章首先回顾了传统的中介分析方法及其局限性，然后定义了自然间接效应和自然直接效应这两个核心参数，并讨论了识别中介效应的关键条件——序贯可忽略性假设。接着，文章介绍了中介效应的估计方法，以及在基本识别条件被违反时的处理方法。最后，利用因果中介分析方法，评估了2018年中国城镇居民教育通过职业渠道对收入影响的程度，发现大学教育可以通过职业渠道显著提升收入，职业渠道可以解释大学教育回报的约45%，而对仅完成高中教育的个体，职业渠道对收入的影响较小，仅约11%。文章通过使用工具变量处理干预及中介变量的内生性问题，得到的结果基本一致，验证了因果中介分析方法的有效性和可靠性。
+
+因果中介分析的理论进展及其应用
+
+2025
+
+研究设计：本研究采用因果中介分析方法，旨在识别和估计教育通过职业渠道影响收入的自然间接效应（NIE）和自然直接效应（NDE）。研究首先定义了NIE和NDE作为核心目标参数，即教育对收入的总效应中通过职业中介的效应部分（NIE）和不通过职业中介的直接效应部分（NDE）。为识别这些效应，研究引入序贯可忽略性假设，该假设要求在控制协变量后，干预（教育）和中介（职业）变量类似于随机化分配，不存在未观测的混杂因素。在此基础上，研究使用倾向得分加权和工具变量法处理干预和中介变量的内生性问题，以实现因果效应的准确估计。通过这种方法，研究能够量化职业渠道在解释教育对收入影响中的作用和重要性。
+
+核心发现：教育通过职业渠道对居民收入的影响显著，对于大学教育者，职业渠道可以解释教育回报的约45%，而对于仅完成高中教育的个体，职业渠道对收入的影响较小，仅能解释约11%的教育回报。
+
+《因果中介分析的理论进展及其应用》由赵西亮发表于2025年第2期的《数量经济技术经济研究》。文章摘要阐述了因果中介分析方法在经济学研究中的理论进展与应用。先回顾传统中介分析方法的局限，定义自然间接效应和自然直接效应这两个核心参数，讨论序贯可忽略性假设这一识别中介效应的关键条件，接着介绍中介效应估计方法和违反基本识别条件的处理方法，最后用该方法评估2018年中国城镇居民教育经职业渠道对收入的影响。研究设计上采用因果中介分析方法，定义自然间接效应和自然直接效应为核心目标参数，以序贯可忽略性假设识别效应，用倾向得分加权和工具变量法处理内生性问题来准确估计因果效应。核心发现为教育通过职业渠道对居民收入影响显著，大学教育中职业渠道可解释约45%的教育回报，高中教育则仅能解释约11%的教育回报。
+</code></pre>
+</section>
+<section id="因果推断五十年成就挑战与应对" class="level1">
+<h1>5、因果推断五十年：成就、挑战与应对</h1>
+<p><img src="https://metrics101.oss-cn-chengdu.aliyuncs.com/fig-metrics/202503031032953.png" class="img-fluid"></p>
+<p><img src="https://metrics101.oss-cn-chengdu.aliyuncs.com/fig-metrics/202503031021842.png" class="img-fluid"></p>
+<pre><code>
+因果推断五十年
+期刊名称：《学术月刊》
+文章标题：因果推断五十年：成就、挑战与应对
+作者：许琪
+发表时间：2024年第11期
+
+摘要：
+本文回顾了鲁宾因果模型问世五十年来在因果关系理论认识和分析方法上的发展，以及该模型在社会科学领域实证研究中的应用。文章指出，尽管鲁宾因果模型取得了显著成就，但也面临着诸多挑战和局限，尤其是在观察研究中难以保证随机分配假定，以及在分析结果的原因和识别因果机制方面的不足。为了应对这些挑战，文章提出研究者需要改进定量研究设计，并有意识地借鉴和吸纳定性分析工具，以实现对因果关系的全面和透彻分析，促进定量与定性研究范式的融通。
+
+因果推断五十年：成就、挑战与应对
+
+2024
+
+
+
+研究设计：本研究采用混合方法研究设计，首先通过定性探索初步了解研究问题，确定研究方向；其次，基于定性发现，选择适当的定量方法进行因果效应分析，如随机对照试验、自然实验、工具变量或断点回归等，以识别自变量对因变量的因果影响；最后，结合定性案例分析深入探讨因果机制，通过过程追踪法等定性工具阐释原因与结果之间的联系。
+
+核心发现：鲁宾因果模型在提供深刻因果理论认识和丰富分析方法的同时，面临将模型应用于观察研究时无法保证随机分配假定的局限，以及在分析结果的原因和识别因果机制方面的不足，提示研究者需结合定量与定性方法，以全面透彻分析因果关系。
+
+《因果推断五十年：成就、挑战与应对》回顾鲁宾因果模型问世五十年来在因果关系理论与分析方法的发展及在社会科学实证研究中的应用。摘要指出虽有显著成就但面临挑战，如观察研究中随机分配假定难以保证、结果原因分析与因果机制识别不足。研究采用混合方法设计，先定性探索确定研究方向，再用定量方法分析因果效应，最后用定性案例分析因果机制。核心发现为鲁宾因果模型有理论与方法贡献但存在应用局限，研究者应结合定量和定性方法全面分析因果关系。
+
+</code></pre>
+</section>
+<section id="双重差分法的安慰剂检验一个实践的指南" class="level1">
+<h1>6、双重差分法的安慰剂检验：一个实践的指南</h1>
+<p><img src="https://metrics101.oss-cn-chengdu.aliyuncs.com/fig-metrics/202503031033294.png" class="img-fluid"></p>
+<p><img src="https://metrics101.oss-cn-chengdu.aliyuncs.com/fig-metrics/202503031022795.png" class="img-fluid"></p>
+<pre><code>
+双重差分安慰剂检验--指南
+
+期刊名称：《管理世界》
+
+文章标题：双重差分法的安慰剂检验：一个实践的指南
+
+作者：陈强、齐霁、颜冠鹏
+
+发表时间：2025 年第 2 期
+
+
+摘要：本文探讨了双重差分法（DID）在实证研究中的应用及其局限性，特别是针对DID模型依赖的平行趋势假定不可检验的问题。文章系统梳理了文献中DID安慰剂检验的不同方法，并针对标准DID、交叠DID、一般DID、连续DID、DDD及队列DID等不同DID设计，详细介绍了安慰剂检验的基本原理与操作过程，并提出了规范化建议。文章还开发了Stata命令didplacebo，结合经典案例演示了标准DID与交叠DID的安慰剂检验操作，旨在帮助研究者进行更严谨有效的安慰剂检验，以验证DID模型的稳健性。
+双重差分法的安慰剂检验：一个实践的指南
+2025
+
+双重差分法（DID）的安慰剂检验理论机制在于，通过引入伪处理时间、伪处理个体或同时使用两者，构造一个或多个对照组，以检验研究中估计的处理效应是否稳健。在没有真实政策或干预的情况下，如果安慰剂检验结果显示出与真实处理效应相似的显著性，那么这可能表明原有的处理效应估计受到了不可观测混杂因素的影响，从而对原有DID估计的因果推断的有效性提出质疑。反之，如果安慰剂效应不显著，这增强了对真实处理效应稳健性的信心。
+
+本文的理论贡献在于系统梳理了双重差分法（DID）安慰剂检验的不同方法，并针对多种DID设计（包括标准DID、交叠DID、一般DID、连续DID、三重差分法DDD及队列DID），详细介绍了安慰剂检验的基本原理与操作过程，提出了规范化建议。此外，文章通过开发Stata命令didplacebo，结合经典案例，演示了标准DID与交叠DID的安慰剂检验操作，推动了DID安慰剂检验方法的更广泛应用。
+
+研究设计：本研究采用双重差分法（DID），通过引入安慰剂检验来验证因果推断的稳健性。在标准DID框架下，我们将政策实施前后的数据进行对比分析，以评估政策效应。同时，通过构造伪处理时间、伪处理个体以及结合时间和空间的混合安慰剂检验，来检验处理效应的显著性是否由偶然因素或混杂事件所驱动，从而增强研究结论的可信度。此外，我们还考虑了连续DID和三重差分法（DDD）的设计，以处理政策强度不同和多时间点政策变化的复杂情况。
+
+核心发现：安慰剂检验作为差异中的差异（DID）模型估计的验证工具，能够有效识别和证伪由不可观测时变混杂因素所驱动的处理效应，从而增强DID模型因果推断的可信度。
+2025年第2期《管理世界》发表陈强、齐霁、颜冠鹏的文章《双重差分法的安慰剂检验：一个实践的指南》。文章探讨DID在实证研究中的应用与局限性（针对平行趋势假定不可检验的问题），梳理文献中DID安慰剂检验方法，针对多种DID设计介绍安慰剂检验原理与操作过程并提出规范化建议，开发Stata命令didplacebo并结合案例演示标准DID和交叠DID的操作。其理论机制为引入伪元素构造对照组检验处理效应稳健性，理论贡献包括系统梳理方法、针对多种设计介绍原理操作及提出建议、开发命令演示操作推动广泛应用。研究采用DID引入安慰剂检验，在标准DID框架下对比政策前后数据评估政策效应，通过多种构造检验处理效应显著性，也考虑连续DID和DDD处理复杂情况。核心发现为安慰剂检验可验证DID模型估计、增强因果推断可信度。
+</code></pre>
+</section>
+<section id="断点回归的两大分析框架我们究竟该用哪一个" class="level1">
+<h1>7、断点回归的两大分析框架：我们究竟该用哪一个？</h1>
+<p><img src="https://metrics101.oss-cn-chengdu.aliyuncs.com/fig-metrics/202503031017554.png" class="img-fluid"></p>
+<p><img src="https://metrics101.oss-cn-chengdu.aliyuncs.com/fig-metrics/202503031017206.png" class="img-fluid"></p>
+<pre><code>断点回归框架
+
+期刊名称：《2024年第11期》
+
+文章标题：断点回归的两大分析框架：我们究竟该用哪一个？
+
+作者：陈强、齐霁、颜冠鹏
+
+发表时间：2024年
+
+
+摘要：本文探讨了断点回归设计的两大分析框架：基于连续性的框架和局部随机化框架。基于连续性的框架假设潜在结果的条件期望在断点处连续，而局部随机化框架则假设在断点附近的小窗口内，驱动变量可视为随机分配。文章详细介绍了这两大框架的原理与技术细节，并通过对蒙特卡罗模拟与经典案例的分析比较了二者的差异。研究发现，连续性框架可能存在内生性偏差，而局部随机化框架在所选窗口内更易满足外生性条件。此外，局部随机化框架适用于离散驱动变量，且可识别带宽内所有个体的平均处理效应，具有更强的外部有效性。因此，局部随机化框架在未来的断点回归实证研究中可能发挥越来越重要的作用。
+
+断点回归的两大分析框架：我们究竟该用哪一个？
+
+2024
+
+研究设计：本研究采用断点回归设计（Regression Discontinuity Design, RDD）来识别和估计政策或干预措施的因果效应。RDD是一种准实验研究设计，通过利用一个已知的分数（如考试成绩、收入水平等）来决定个体是否接受某种处理（如奖学金、补贴等）。在本研究中，个体获得一个得分，若此得分超过某个预设的断点，则进入处理组；反之，则进入控制组。研究的基本前提是，在断点附近两侧的处理组与控制组个体在可比性上是相似的，因此可以作为有效的反事实进行比较。通过比较断点两侧的结果变量均值差异，可以估计出处理效应。本研究将使用局部线性回归方法来估计断点处的局部平均处理效应，并采用偏差校正的稳健置信区间进行统计推断。此外，为了验证RDD设计的假设条件，本研究还将进行一系列的证伪检验，包括密度检验和伪断点检验等。
+
+核心发现：断点回归的连续性框架可能存在内生性偏差，而局部随机化框架在更窄的带宽内提供了无偏的一致估计，尤其在处理变量存在内生性或离散驱动变量的情况下，局部随机化框架的应用价值被低估，未来有望在实证研究中发挥更重要作用。
+
+《断点回归的两大分析框架：我们究竟该用哪一个？》由陈强、齐霁、颜冠鹏发表于2024年《2024年第11期》。文章摘要指出探讨断点回归设计的基于连续性框架和局部随机化框架，前者假设潜在结果条件期望在断点处连续，后者假设断点附近小窗口内驱动变量随机分配，详细介绍二者原理与技术细节并通过蒙特卡罗模拟和经典案例比较差异。研究设计采用断点回归设计（RDD），个体得分超预设断点进处理组反之进控制组，用局部线性回归估计局部平均处理效应与偏差校正的稳健置信区间进行统计推断，还有一系列证伪检验。核心发现为连续性框架可能有内生性偏差，局部随机化框架在更窄带宽内提供无偏一致估计，处理变量内生或离散驱动变量时其应用价值被低估，未来在实证研究中可能更重要。</code></pre>
+<hr>
+<section id="计量经济网-1" class="level2">
+<h2 class="anchored" data-anchor-id="计量经济网-1">🎓 计量经济网</h2>
+<ul>
+<li>10年间，计量经济网依托于微信公众平台等累积了计量经济学及Eviews、Stata、SPSS、Matlab、Geoda、Python、ArcGIS、R等相关方法及软件操作的优质资源，旨在为大家分享经管人文社科等领域的相关知识，希望能帮助读者更好的学习计量。</li>
+<li>📚 <a href="https://www.aistata.cn">计量经济网主页</a> — 计量学术科研服务平台</li>
+<li>🔧 <a href="https://www.aistata.cn/AITools/">AI 工具导航</a> — AI 工具集合，助你效率翻倍</li>
+<li>📈 <a href="https://www.aistata.cn/AITools/">高级计量及Stata应用课程</a> — 2017-2026年，10年Stata经典课程</li>
+</ul>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>资源</th>
+<th>链接</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>计量经济网主页</td>
+<td><a href="https://www.aistata.cn">🔗 访问</a></td>
+<td>计量学术科研服务平台</td>
+</tr>
+<tr class="even">
+<td>AI 工具导航</td>
+<td><a href="https://www.aistata.cn/AITools/">🔗 访问</a></td>
+<td>AI 工具集合</td>
+</tr>
+<tr class="odd">
+<td>高级计量及Stata应用课程</td>
+<td><a href="https://www.aistata.cn/AITools/">🔗 访问</a></td>
+<td>10年Stata经典课程</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="温馨提示" class="level2">
+<h2 class="anchored" data-anchor-id="温馨提示">💡 温馨提示</h2>
+<blockquote class="blockquote">
+<p>更多资源，欢迎关注数量经济学微信公众号、计量经济网</p>
+</blockquote>
+<hr>
+</section>
+<section id="联系我们" class="level2">
+<h2 class="anchored" data-anchor-id="联系我们">📧 联系我们</h2>
+<p>如有疑问或建议，欢迎通过 <a href="https://www.aistata.cn">计量经济网</a> 与我们取得联系。</p>
+<hr>
+<p>⭐ 如果对你有帮助，请给本仓库一个 Star！</p>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
